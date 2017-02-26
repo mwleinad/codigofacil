@@ -1,0 +1,79 @@
+Para poder interpretar y ejecutar un archivo de PHP necesitamos un servidor web.
+Que es un servidor web. Bueno piensen en esto mas o menos como cuando llegas a un restaurante, llegas y un host o
+hostess te reciben, checan tu reservacion y te sientan en tu mesa. Similarmente un servidor web checa la pagina
+web que has solicitado y la obtiene para que puedas verla, pero no solo eso sino que ademas sirve tambien de mesero
+es el que comunica tus peticiones al "chef" (website), se asegura que todo este bien y tambien es el limpiavajillas
+ya que se encarga de la limpieza del memoria, cache y modulos para que nuevos clientes puedan utlizarlo
+
+Para nuestros tutoriales podemos utilizar cualquier servidor web que querramos pero este tutorial descargaremos
+e instalaremos un programa llamado wamp server, este me gusta porque es bastante facil de installar y de usar.
+La configuracion que necesitaremos para empezar es minima y el video los guiara a traves de toda la instalacion
+
+Aprovecho para decirles que todos los tutoriales estan hechos con el sistema operativo windows (de preferencia
+windows 10)
+
+para descargar wampserver entramos a http://www.wampserver.com/en/
+picamos donde dice "start using wampserver" y nos daran 2 opciones, una es para sistemas operativos de 32 y 64 bits
+si no sabes que tipo de sistema operativo es le picamos en inicio, buscamos, mi computadora, damos click derecho
+propiedades, y ahi en la pantalla donde dice tipo de sistema dira si su sistema es de 32 o 64, bits. Con esta infor
+macion descargamos el wampserver correspondiente
+
+le picamos donde dice "download directly", empezara a descargar el archivo es aprox 209 megabytes por lo que tardara un
+poco
+Al terminar picamos el archivo wampserver.exe que descargo y le damos ejecutar, si nos preguntan si deseamos hacer
+cambios enla configuracion porque necesitamos permiso de administrador le damos que si.
+
+la siguiente pantalla nos preguntara el idioma, de mi parte yo siempre prefiero instalar todo en ingles, ademas de la
+practica tambien nos sirve que la mejor documentacion esta en ingles y es mas facil buscarla.
+
+aceptamos los terminos del servicio, picamos siguiente.
+
+Aqui nos pide que tengamos en cuenta 3 cosas:
+si tenemos skype, tenemos que cambiar una configuracion que impide que wampserver se ejecute correctamente, si tenemos
+skype lo abrimos y nos vamos a herramientas, de ahi a opciones, ahi buscamos avanzados y despues en conexion, y nos
+aseguramos que donde dice "usar puerto 80 y 443 para conexiones adicionales" NO este seleccionado.
+
+como segundo paso (este es algo complicado), tenemos que checar si los redistribuibles de C++ estan instalados en
+nuestro sistema. Si tenemos windows 8 en adelante, no deberiamos de tener problemas ya que vienen instalados. Pero
+para asegurarse que asi sea, nos vamos a inicio. buscamos programas y caracteristicas, y abrimos, buscamos que el
+microsoft visual c++ redistrubutable del 9, 10,  11, 12 13 y 14 esten ahi
+si no lo tienes, instalalos, las ligas para instalarlos estan en el post.
+
+-- VC9 Packages (Visual C++ 2008 SP1)
+http://www.microsoft.com/en-us/download/details.aspx?id=5582
+http://www.microsoft.com/en-us/download/details.aspx?id=2092
+-- VC10 Packages (Visual C++ 2010 SP1)
+http://www.microsoft.com/en-us/download/details.aspx?id=8328
+http://www.microsoft.com/en-us/download/details.aspx?id=13523
+-- VC11 Packages (Visual C++ 2012 Update 4)
+The two files VSU4\vcredist_x86.exe and VSU4\vcredist_x64.exe to be download are on the same page: http://www.microsoft.com/en-us/download/details.aspx?id=30679
+-- VC13 Packages] (Visual C++ 2013)
+The two files VSU4\vcredist_x86.exe and VSU4\vcredist_x64.exe to be download are on the same page: https://www.microsoft.com/en-us/download/details.aspx?id=40784
+-- VC14 Packages (Visual C++ 2015 Update 3)
+The two files vcredist_x86.exe and vcredist_x64.exe to be download are on the same page:
+http://www.microsoft.com/fr-fr/download/details.aspx?id=53840
+
+Si tienes una computadora de 64 bits, tienes que instalar tanto los redistributables de 32 bits y los de 64 bits.
+Si tienes una computadora de 32 bits solo tienes que instalar los de 32 bits
+
+el ultimo paso es asegurarnos que lo instalamos en el directorio root, o raiz (cuando nos refiramos a directorio root
+es por lo general el primer directorio o el directorio principal), seguramente el directorio sera c:/ entonces lo
+instalamos ahi (se vera como c:/wamp o c:/wamp64), despues de ese paso solo den siguiente hasta la pantalla donde dice
+install, le damos instalar y esperamos a que termine de instalar
+
+en un momento de la instalacion te pedira que selecciones tu browser por default, generalmente me gusta utilizar chrome
+asi que si quieren utilizar ese cuando les pregunte nos vamos a
+C:\Program Files (x86)\Google\Chrome\Application
+
+y lo seleccionamos, despues preguntara por datos de nuestro servidor de correos, no nos preocuparemos por eso ahora y
+simplemente dejalo tal como esta, le damos siguiente y terminara de instalar
+
+dejamos marcada la opcion de iniciar wamp, al iniciar wamp aparecera un nuevo icono en nuestro tray, con una W que
+cambia de color (rojo significa servidor apagado, amarillo o naranja, que el servidor no pudo iniciar todos los
+servicios y verde que todos los servicios estan funcionando)
+
+si esta en verde lo que haremos es abrir google chrome y tipear http://localhost y si todo sale bien recibiremos una
+pantalla de bienvenida
+
+en nuesto siguiente video veremos como crear nuestro primer proyecto
+

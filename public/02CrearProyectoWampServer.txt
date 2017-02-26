@@ -1,0 +1,59 @@
+para mostrar la funcionalidad de wampserver vamos a crear un proyecto sencillo, nuestro primer "Hello World" en PHP
+no explicaremos ningun concepto aun, es solo para poder demostrar la funcionalidad
+
+primero nos aseguramos que nuestro icono de wampserver este funcionando (en verde) y vamos a http://localhost en
+chrome
+
+despues de eso abrimos un archivo de notepad (bloc de notas), escribiremos lo siguiente
+<?php
+echo "Hello World";
+
+y guardaremos el archivo en la siguiente direccion
+c:/wamp64/www (o wamp dependiendo de su directorio)
+
+ahi creamos una nueva carpeta. cada carpeta aqui es un "proyecto", lo llamaremos HelloWorld y dentro de ahi nuestro
+archivo se llamara HelloWorld.php, aqui es bien importante marcar la opcion de "mostrar todos los archivos", de lo
+contrario notepad lo guardara como txt
+
+lo guardamos y tendremos un archivo en c:/wamp64/www/HelloWorld/HelloWorld.php
+
+para ver si funciono abrimos chrome y nos vamos a
+http://localhost/HelloWorld/HelloWorld.php
+
+y si todo esta bien deberiamos ver el texto Hello World en nuestra pantalla. Listo! han hecho su primer programa en PHP
+
+eso de crear archivos en notepad y guardarlos esta muy bien, funciona, pero con notepad no tenemos todas las
+ventajas que ofrece un IDE (Integrated Development Enviroment) o entorno de desarrollo integrado. entre las ventajas que
+tiene utilizar un ide es un codigo de colores, lineas numeradas, funciones de autocompletado de codigo, muestran
+donde estan los errores, etc.
+
+En lo particular yo utilizo PHPStorm para todos los videos ya que es un IDE muy completo y por demas recomendado
+tiene la desventaja que es un software de pago, pero si tienen la oportunidad de usarlo, este es mi recomendacion.
+un ide mas sencillo (para practicar o para proyecto pequenios) es Notepad++, otro muy bueno es SublimeText
+
+las ligas para descarga estan en el post
+https://www.jetbrains.com/phpstorm/
+https://www.sublimetext.com/3
+https://notepad-plus-plus.org/download/v7.3.2.html
+
+hay muchos otros en el mercado, dreamweaver, programmers notepad, eclipse, etc, pueden usar cualquiera, para estos
+proyectos yo utilizare phpstorm, pero si no pueden conseguir el phpstorm, la recomendacion seria usar sublimetext ya
+que es el que mas se asemeja a este
+
+vamos a proceder a descargarlo y mostrarles como se abre un proyecto nuevo
+vamos a https://www.sublimetext.com/3 y le picamos a la version que nos corresponda (windows si es de 32 bits y
+windows 64 si es de 64 bits)
+
+despues de terminar de descargar abrimos, le damos ejecutar y si nos pregunta si queremos ejecutar el archivo le damos
+que si, le damos siguiente, le marcamos la opcion para agregar al menu de contexto de explorer, le damos siguiente e
+instalar
+vamos a inicio y buscamos sublime text 3. Al abrir nos vamos a file, y de ahi a open folder y buscamos nuestro folder
+HelloWorld que acabamos de hacer (debe de estar en c:/wamp64/www/HelloWorld, abrimos el folder y eso es todo, eso es un
+proyecto.
+Abrimos nuestro archivo HelloWorld.php y veremos que hay lineas numeradas y el color del texto es diferente entre el
+texto normal y las keywords. De esta manera vamos a ir aprovechando las ventajas de un IDE
+
+En nuestro proximo video, empezaremos a ver ya los concepto basicos de programacion, de esa manera iniciaremos nuestro
+aprendizaje.
+
+

@@ -1,7 +1,9 @@
 <?php
 //El loop for es el ciclo mas comunmente usado. En lo particular para mi es el segundo ciclo mas usado despues del
 // foreach, los ciclos while y do-while raramente lo utilizo, es mas no recuerdo la ultima vez que los utilice.
-// no dudo que en otros lenguajes se utilcen mas pero por lo pronto nos enfocaremos en solo 2 ciclos, for y foreach
+// no dudo que en otros lenguajes se utilcen mas pero por lo pronto nos enfocaremos en solo este ciclo, y dejaremos
+//para mas adelante el ciclo foreach ya que ese es utiliado mas en conjunto con arrays (arreglos) y esa sera nuestra
+//siguiente leccion.
 // El ciclo for tiene una forma de armarse muy particular, ya completo se ve de la siguiente forma
 // for($argument1; $argument2; $atgument3)
 // $argument1, nuestro punto inicial, generalmente es 0 pero podemos iniciar en cualquier punto dependiendo de
@@ -69,3 +71,5 @@ for($number = 1; $number <= 10; $number += 1) {
     echo "\n";
     sleep(2);
 }
+
+//mostrar ejemplo de que pasa si se nos olvida el operador de comparacion y utilizamos uno de igualdad.
